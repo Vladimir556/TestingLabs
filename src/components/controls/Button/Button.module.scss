@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.button{
+  font-family: $defaultFont;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  background-color: $whiteColor;
+  color: $purpleColor;
+  border: 2px solid $purpleColor;
+  border-radius: 10px;
+  transition: all .1s ease;
+  &:hover{
+    color: $whiteColor;
+    background-color: $purpleColor;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 600px){
+  .button{
+    position:static !important;
+    margin: 10px auto;
+    float: right;
+  }
+}

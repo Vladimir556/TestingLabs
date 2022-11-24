@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media screen and (max-width: 600px){
+  .grid{
+    grid-template-columns: 1fr !important;
+    gap: 0;
+  }
+}

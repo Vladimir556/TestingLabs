@@ -1,0 +1,57 @@
+@import "../../../styles/variables";
+
+.input{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  position: relative;
+  &__label{
+    font-size: 1.2rem;
+    &::after{
+      content: ":";
+    }
+  }
+  &__field{
+    border: 1px solid $purpleLightColor;
+    border-radius: 10px;
+    height: 30px;
+    padding: 0 10px;
+    color: $textColor;
+    font-family: $defaultFont;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+  }
+  &__data{
+    position: absolute;
+    background-color: $whiteColor;
+    width: 100%;
+    border: 1px solid $purpleColor;
+    border-radius: 10px;
+    z-index: 2;
+    top: 50px;
+    overflow: hidden;
+    p{
+      padding: 10px 10px;
+      margin: 0;
+      &:hover{
+        background-color: $backgroundMain;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.error-field{
+  border: 2px solid #b00000;
+}
+.error-label{
+  color: #b00000;
+}
+.error-text{
+  position: absolute;
+  right: 0;
+  color: #b00000;
+  font-weight: bold;
+}
+
